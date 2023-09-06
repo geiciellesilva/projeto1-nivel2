@@ -1,0 +1,101 @@
+/*
+body
+img bolas
+div meio
+ img moveis
+ h1
+ h1-span
+ p
+ p-span
+div footer
+footer-a
+img bolas
+
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+  margin: 0px;
+/*margin 0 no body vai retirar os 8px que os 
+navegadores colocam no topo da página*/
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#meio {
+  width: 592px;
+  margin: 0px auto 72px
+  /*Com 2 valores:
+  O primeiro valor é sempre para top e bottom e 
+  o segundo valor é para left e right
+  
+  Com 3 valores:
+  O primeiro é top
+  o segundo é laterais
+  o terceiro é bottom
+  
+  Com 4 valores:
+  O primeiro é top
+  O segundo é right
+  O terceiro é bottom
+  O quarto é left, funciona como um relógio
+  */
+}
+
+#meio img{
+  margin-bottom: 72px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span,a {
+  color: #FF9900;
+}
+
+p, #footer {
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer {
+  margin-bottom: 33px;
+}
+
+#footer a + a {
+  /*Pegar o a que anterior a ele tenha um a*/
+  margin-left: 28px;
+  /*Pegando o termo Fale Conosco porque é o a que antes
+  dele tem outro a, então adicionamos a margem de 28px à
+  esquerda dele*/
+}
+
+#line {
+  width: 568px;
+  height: 0px;
+  border: 1px solid #ECEFF2;
+  border: center;
+  margin: 0px auto 8px;
+}
+
+#bolas {
+  /*O position funciona como se criasse uma layer
+  superior em cima da página normal*/
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+}
